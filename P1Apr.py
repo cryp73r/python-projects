@@ -1,0 +1,10 @@
+import pyttsx3
+engine = pyttsx3.init('sapi5')
+volume=engine.getProperty('volume')
+print(volume)
+engine.setProperty('volume', 1)
+rate=engine.getProperty('rate')
+print(rate)
+engine.setProperty('rate', 130)
+engine.say("Hi! I'm your Assistant Anna")
+engine.runAndWait()
