@@ -1,6 +1,6 @@
-import re
+from re import *
 def check(t):
-    mo = re.compile(r'\d{5} \d{5}')
+    mo = compile(r'\d{5} \d{5}')
     for i in mo.findall(t):
         print(i)
 
